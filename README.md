@@ -1,0 +1,2 @@
+# AssetLabelManager
+UnityのAssetを楽にタグ付けするためのプラグイン
