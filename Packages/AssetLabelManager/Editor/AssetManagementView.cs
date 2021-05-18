@@ -6,7 +6,7 @@ using System.IO;
 using System.Linq;
 using Object = UnityEngine.Object;
 
-namespace RustedCode.Scripts.Editor.AssetManagement
+namespace AssetManagement
 {
     public class AssetManagementView : TreeView
     {

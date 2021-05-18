@@ -1,6 +1,6 @@
 using UnityEditor.IMGUI.Controls;
 
-namespace RustedCode.Scripts.Editor.AssetManagement
+namespace AssetManagement
 {
     public class AssetElementItem : TreeViewItem
     {

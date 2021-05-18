@@ -6,11 +6,11 @@ using UnityEditor;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 
-namespace RustedCode.Scripts.Editor.AssetManagement
+namespace AssetManagement
 {
     class AssetManagementWindow : EditorWindow
     {
-        private const string path = "./Assets/AssetLabelManager/Editor/settings.json";　//configファイルのパス
+        private const string path = "./Packages/AssetLabelManager/Editor/settings.json";　//configファイルのパス
         private TreeViewState _treeViewState; 
         private AssetManagementView _treeView;
         private SearchField _searchField;
