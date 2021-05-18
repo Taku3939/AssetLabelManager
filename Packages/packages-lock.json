@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "com.taku.assetlabelmanager": {
+    "com.taku.asset-label-manager": {
       "version": "file:AssetLabelManager",
       "depth": 0,
       "source": "embedded",

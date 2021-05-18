@@ -1,10 +1,11 @@
 {
-    "name": "com.taku.assetlabelmanager",
-    "displayName": "AssetLabelManager",
-    "version": "0.1.0",
-    "unity": "2020.1",
-    "description": "description.",
-    "author": {
-      "name": "Takuya Isaki"
-    }
-  }
+  "name": "com.taku.asset-label-manager",
+  "displayName": "AssetLabelManager",
+  "version": "0.1.0",
+  "unity": "2020.3",
+  "description": "description.",
+  "author": {
+    "name": "Taku"
+  },
+  "unityRelease": "6f1"
+}
