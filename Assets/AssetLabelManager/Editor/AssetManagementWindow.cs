@@ -10,7 +10,7 @@ namespace AssetManagement
 {
     class AssetManagementWindow : EditorWindow
     {
-        private const string path = "./Packages/AssetLabelManager/Editor/settings.json";　//configファイルのパス
+        private const string path = "./Assets/AssetLabelManager/settings.json";　//configファイルのパス
         private TreeViewState _treeViewState; 
         private AssetManagementView _treeView;
         private SearchField _searchField;
@@ -63,6 +63,12 @@ namespace AssetManagement
             
             //Assetのpathの取得
             string str = "";
+            
+            if (!File.Exists(path))
+            {
+                var fs = File.Create(path);
+                using (StreamWriter sr = new StreamWriter(fs)) {sr.WriteAsync("{\"dir\": \"Assets\"}"); }
+            }
             using (FileStream fs = new FileStream(path, FileMode.Open, FileAccess.ReadWrite))
             using (StreamReader sr = new StreamReader(fs)) { str = sr.ReadToEnd(); }
             var settings = JsonUtility.FromJson<Settings>(str);
